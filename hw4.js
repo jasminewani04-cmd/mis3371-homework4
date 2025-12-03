@@ -494,8 +494,7 @@ if (firstName && firstName.trim() !== "") {
 
     if (headerH2) headerH2.textContent = originalHeaderText;
 } else {
-    // first-time visitor: update heading and show a welcome
-    if (headerH2) headerH2.textContent = 'Welcome New User';
+    // first-time visitor: keep the original clinic heading and show a welcome in the page spans
     if (w1) w1.innerHTML = 'Welcome to Wani Health Clinic!';
     if (w2) w2.innerHTML = 'Please fill out the form to register.';
 }
