@@ -470,11 +470,8 @@ inputs.forEach(function (input) {
 });
 
 // manage welcome text and header for returning vs new visitors
-// manage welcome text and header for returning vs new visitors
-var headerH2 = document.querySelector('header h2');
 var w1 = document.getElementById('welcome1');
 var w2 = document.getElementById('welcome2');
-var originalHeaderText = headerH2 ? headerH2.textContent : '';
 
 var firstName = getCookie("firstName");
 if (firstName && firstName.trim() !== "") {
