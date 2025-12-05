@@ -531,5 +531,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// fetch api health tips
+function getHealthTip() {
+  fetch("https://api.adviceslip.com/advice")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("healthTip").innerText = data.slip.advice;
+    });
+}
+
+
 //log to console that hw4.js is loaded
 console.log('Homework 4 JS loaded');
